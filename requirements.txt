@@ -1,0 +1,5 @@
+python-telegram-bot==22.5
+python-dotenv==1.1.1
+Flask==3.1.1
+gunicorn==23.0.0
+requests==2.32.4
