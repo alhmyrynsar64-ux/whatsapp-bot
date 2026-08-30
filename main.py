@@ -2,7 +2,7 @@ import os,logging
 from dotenv import load_dotenv
 from telegram import Update,InlineKeyboardButton,InlineKeyboardMarkup
 from telegram.ext import Application,CommandHandler,CallbackQueryHandler,MessageHandler,ContextTypes,filters
-from database.db import get,init
+from db import get,init
 load_dotenv(); TOKEN=os.getenv('BOT_TOKEN'); ADMIN_ID=int(os.getenv('ADMIN_ID','0')); logging.basicConfig(level=logging.INFO)
 def kb():
  c=get(); rows={}
